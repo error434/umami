@@ -5,7 +5,7 @@ export default {
   input: 'tracker/index.js',
   
   output: {
-    file: 'public/umami.js',
+    file: 'public/miso.js',
     format: 'iife',
   },
   plugins: [buble({ objectAssign: true }), terser({ compress: { evaluate: false } })],

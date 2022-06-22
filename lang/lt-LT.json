@@ -73,7 +73,7 @@
   "message.go-to-settings": "Eiti į nustatymus",
   "message.incorrect-username-password": "Neteisingas vartotojo vardas/slaptažodis.",
   "message.log.visitor": "Lankytojas iš {country}, naudojantis {browser} sistemoje {os} {device}",
-  "message.new-version-available": "Išėjo nauja \"umami\" {version} versija!",
+  "message.new-version-available": "Išėjo nauja \"miso\" {version} versija!",
   "message.no-data-available": "Nėra jokių duomenų.",
   "message.no-websites-configured": "Jūs nesate susikonfiguravę jokių svetainių.",
   "message.page-not-found": "Puslapis nerastas.",

@@ -19,7 +19,7 @@ export default function Footer() {
           values={{
             name: (
               <Link href={HOMEPAGE_URL}>
-                <b>umami</b>
+                <b>miso</b>
               </Link>
             ),
           }}

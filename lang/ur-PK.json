@@ -73,7 +73,7 @@
   "message.go-to-settings": "ترتیبات پر جائیں",
   "message.incorrect-username-password": "غلط صارف نام/پاس ورڈ۔",
   "message.log.visitor": "{os} {device} پر {browser} کا استعمال کرتے ہوئے {country} سے آنے والا",
-  "message.new-version-available": "umami {version} کا ایک نیا ورژن دستیاب ہے!",
+  "message.new-version-available": "miso {version} کا ایک نیا ورژن دستیاب ہے!",
   "message.no-data-available": "مواد موجود نہیں ہے.",
   "message.no-websites-configured": "آپ کے پاس کوئی ویب سائٹ کنفیگر نہیں ہے۔",
   "message.page-not-found": "صفحہ نہیں ملا.",

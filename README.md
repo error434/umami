@@ -1,16 +1,16 @@
-# umami
+# miso
 
-Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+miso is a simple, fast, privacy-focused alternative to Google Analytics.
 
 ## Getting started
 
-A detailed getting started guide can be found at [https://umami.is/docs/](https://umami.is/docs/)
+A detailed getting started guide can be found at [https://miso.is/docs/](https://miso.is/docs/)
 
 A fast way to get up and running is to use Railway
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/umami)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/miso)
 
-See [Running on Railway](https://umami.is/docs/running-on-railway) to get started.
+See [Running on Railway](https://miso.is/docs/running-on-railway) to get started.
 
 ## Installing from source
 
@@ -28,15 +28,15 @@ npm install -g yarn
 ### Get the source code and install packages
 
 ```
-git clone https://github.com/mikecao/umami.git
-cd umami
+git clone https://github.com/mikecao/miso.git
+cd miso
 yarn install
 ```
 
 ### Create database tables
 
-Umami supports [MySQL](https://www.mysql.com/) and [Postgresql](https://www.postgresql.org/).
-Create a database for your Umami installation and install the tables with the included scripts.
+miso supports [MySQL](https://www.mysql.com/) and [Postgresql](https://www.postgresql.org/).
+Create a database for your miso installation and install the tables with the included scripts.
 
 For MySQL:
 
@@ -50,9 +50,9 @@ For Postgresql:
 psql -h hostname -U username -d databasename -f sql/schema.postgresql.sql
 ```
 
-This will also create a login account with username **admin** and password **umami**.
+This will also create a login account with username **admin** and password **miso**.
 
-### Configure umami
+### Configure miso
 
 Create an `.env` file with the following
 
@@ -88,20 +88,20 @@ or change the [port](https://nextjs.org/docs/api-reference/cli#production) to se
 
 ## Installing with Docker
 
-To build the umami container and start up a Postgres database, run:
+To build the miso container and start up a Postgres database, run:
 
 ```bash
 docker-compose up
 ```
 
-Alternatively, to pull just the Umami Docker image with PostgreSQL support:
+Alternatively, to pull just the miso Docker image with PostgreSQL support:
 ```bash
-docker pull ghcr.io/mikecao/umami:postgresql-latest
+docker pull ghcr.io/mikecao/miso:postgresql-latest
 ```
 
 Or with MySQL support:
 ```bash
-docker pull ghcr.io/mikecao/umami:mysql-latest
+docker pull ghcr.io/mikecao/miso:mysql-latest
 ```
 
 ## Getting updates

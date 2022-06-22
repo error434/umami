@@ -24,11 +24,11 @@ import { removeTrailingSlash } from '../lib/url';
   const domain = attr('data-domains') || '';
   const domains = domain.split(',').map(n => n.trim());
 
-  const eventClass = /^umami--([a-z]+)--([\w]+[\w-]*)$/;
-  const eventSelect = "[class*='umami--']";
+  const eventClass = /^miso--([a-z]+)--([\w]+[\w-]*)$/;
+  const eventSelect = "[class*='miso--']";
 
   const trackingDisabled = () =>
-    (localStorage && localStorage.getItem('umami.disabled')) ||
+    (localStorage && localStorage.getItem('miso.disabled')) ||
     (dnt && doNotTrack()) ||
     (domain && !domains.includes(hostname));
 
@@ -47,7 +47,7 @@ import { removeTrailingSlash } from '../lib/url';
     const req = new XMLHttpRequest();
     req.open('POST', url, true);
     req.setRequestHeader('Content-Type', 'application/json');
-    if (cache) req.setRequestHeader('x-umami-cache', cache);
+    if (cache) req.setRequestHeader('x-miso-cache', cache);
 
     req.onreadystatechange = () => {
       if (req.readyState === 4) {
@@ -187,12 +187,12 @@ import { removeTrailingSlash } from '../lib/url';
 
   /* Global */
 
-  if (!window.umami) {
-    const umami = eventValue => trackEvent(eventValue);
-    umami.trackView = trackView;
-    umami.trackEvent = trackEvent;
+  if (!window.miso) {
+    const miso = eventValue => trackEvent(eventValue);
+    miso.trackView = trackView;
+    miso.trackEvent = trackEvent;
 
-    window.umami = umami;
+    window.miso = miso;
   }
 
   /* Start */

@@ -4,7 +4,7 @@ import semver from 'semver';
 import { VERSION_CHECK } from 'lib/constants';
 import { getItem } from 'lib/web';
 
-const REPO_URL = 'https://api.umami.is/v1/updates';
+const REPO_URL = 'https://api.miso.is/v1/updates';
 
 const initialState = {
   current: process.env.VERSION,

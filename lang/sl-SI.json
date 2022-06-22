@@ -73,7 +73,7 @@
   "message.go-to-settings": "Pojdi v nastavitve",
   "message.incorrect-username-password": "Nepravilno uporabniško ime/geslo",
   "message.log.visitor": "Obiskovalec iz {country} uporablja {browser} na {os} {device}",
-  "message.new-version-available": "Nova verzija umami {version} je na voljo!",
+  "message.new-version-available": "Nova verzija miso {version} je na voljo!",
   "message.no-data-available": "Podatki niso na voljo.",
   "message.no-websites-configured": "Ni nastavljenih spletnih mest.",
   "message.page-not-found": "Stran ni bila najdena.",

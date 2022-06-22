@@ -11,7 +11,7 @@ export default function UpdateNotice() {
   const { hasUpdate, checked, latest, updateCheck } = useVersion(true);
 
   function handleViewClick() {
-    location.href = 'https://github.com/mikecao/umami/releases';
+    location.href = 'https://github.com/mikecao/miso/releases';
     updateCheck();
     forceUpdate();
   }
@@ -30,7 +30,7 @@ export default function UpdateNotice() {
       <div className={styles.message}>
         <FormattedMessage
           id="message.new-version-available"
-          defaultMessage="A new version of umami {version} is available!"
+          defaultMessage="A new version of miso {version} is available!"
           values={{ version: `v${latest}` }}
         />
       </div>

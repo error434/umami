@@ -35,9 +35,9 @@ export default function TestConsole() {
   }
 
   function handleClick() {
-    window.umami('event (default)');
-    window.umami.trackView('/page-view', 'https://www.google.com');
-    window.umami.trackEvent('event (custom)', 'custom-type');
+    window.miso('event (default)');
+    window.miso.trackView('/page-view', 'https://www.google.com');
+    window.miso.trackEvent('event (custom)', 'custom-type');
   }
 
   return (
@@ -48,7 +48,7 @@ export default function TestConsole() {
             async
             defer
             data-website-id={website.website_uuid}
-            src={`${basePath}/umami.js`}
+            src={`${basePath}/miso.js`}
             data-cache="true"
           />
         )}
@@ -87,7 +87,7 @@ export default function TestConsole() {
                 </div>
                 <div>
                   <Link href={`https://www.google.com`}>
-                    <a className="umami--click--external-link">external link</a>
+                    <a className="miso--click--external-link">external link</a>
                   </Link>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function TestConsole() {
                 <PageHeader>CSS events</PageHeader>
                 <Button
                   id="primary-button"
-                  className="umami--click--primary-button"
+                  className="miso--click--primary-button"
                   variant="action"
                 >
                   Send event

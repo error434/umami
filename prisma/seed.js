@@ -13,7 +13,7 @@ async function main() {
     update: {},
     create: {
       username: 'admin',
-      password: hashPassword(process.env.ADMIN_PASSWORD || 'umami'),
+      password: hashPassword(process.env.ADMIN_PASSWORD || 'miso'),
       is_admin: true,
     },
   });

@@ -11,7 +11,7 @@ FROM node:16-alpine AS builder
 ARG BASE_PATH
 ARG DATABASE_TYPE
 ENV BASE_PATH=$BASE_PATH
-ENV DATABASE_URL "postgresql://umami:umami@db:5432/umami"
+ENV DATABASE_URL "postgresql://miso:miso@db:5432/miso"
 ENV DATABASE_TYPE=$DATABASE_TYPE
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
