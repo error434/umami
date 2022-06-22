@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 function customScriptName(req) {
-  const scriptName = process.env.TRACKER_SCRIPT_NAME;
+  const scriptName = "miso";
 
   if (scriptName) {
     const url = req.nextUrl.clone();
